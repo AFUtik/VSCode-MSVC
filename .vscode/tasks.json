@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "shell",
+        "label": "msvc build",
+        "command": "E:\\apps\\VS2022\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+        "args": [
+          "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/um'\"",
+          "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/ucrt'\"",
+          "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/shared'\"",
+          "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/winrt'\"",
+          "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/cppwinrt'\"",
+          "/I\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/atlmfc/include\"",
+          "/I\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/include\"",
+          "/I\"E:/apps/VS2022/VC/Auxiliary/VS/include\"",
+          "/I\"${workspaceFolder}\\dependencies\\include\"",
+          "/EHsc",
+          "/Fe:\"E:/Cpp/vscode-msvc/main.exe\"",
+          "/std:c++17",
+          "/GA", 
+          "/MT",
+          "${file}",
+          "/link",
+          "/LIBPATH:\"'E:/Windows Kits/10/lib/10.0.26100.0/um/x64'\"",
+          "/LIBPATH:\"'E:/Windows Kits/10/lib/10.0.26100.0/ucrt/x64'\"",
+          "/LIBPATH:\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/atlmfc/lib/x64\"",
+          "/LIBPATH:\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/lib/x64\"",
+          "/LIBPATH:\"E:/apps/VS2022/VC/Auxiliary/VS/lib/x64\"",
+          "dependencies/64/release/lib/dpp.lib" 
+        ],
+        "problemMatcher": ["$msCompile"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "detail": "msvc build"
+      }
+    ]
+}
