@@ -8,7 +8,7 @@ tasks.json
       {
         "type": "shell",
         "label": "msvc build",
-        "command": "E:\\apps\\VS2022\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+        "command": "{PATH_TO_MSVC_COMPILER}",
         "args": [
           "/I\"'{WINDOWS_SDK_INCLUDE_PATH}/um'\"",
           "/I\"'{WINDOWS_SDK_INCLUDE_PATH}/ucrt'\"",
