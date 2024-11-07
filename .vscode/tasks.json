@@ -4,6 +4,7 @@
         {
             "type": "shell",
             "label": "msvc build",
+            "command": "E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe",
             "args": [
                 "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/um'\"",
                 "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/ucrt'\"",
@@ -33,8 +34,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "msvc build",
-            "command": "E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe"
+            "detail": "msvc build"
         }
     ]
 }
