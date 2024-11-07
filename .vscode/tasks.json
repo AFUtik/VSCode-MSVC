@@ -6,6 +6,7 @@
             "label": "msvc build",
             "command": "E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe",
             "args": [
+                "/I\"E:\\Cpp\\template-projects\\vscode-msvc\\dependencies\\include\"",
                 "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/um'\"",
                 "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/ucrt'\"",
                 "/I\"'E:/Windows Kits/10/Include/10.0.26100.0/shared'\"",
@@ -25,7 +26,8 @@
                 "/LIBPATH:\"'E:/Windows Kits/10/Lib/10.0.26100.0/ucrt/x64'\"",
                 "/LIBPATH:\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/atlmfc/lib/x64\"",
                 "/LIBPATH:\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/lib/x64\"",
-                "/LIBPATH:\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/VC/Auxiliary/VS/lib/x64\""
+                "/LIBPATH:\"E:/apps/VS2022/VC/Tools/MSVC/14.41.34120/VC/Auxiliary/VS/lib/x64\"",
+                "E:\\Cpp\\template-projects\\vscode-msvc\\dependencies\\64\\release\\lib\\aboba.lib"
             ],
             "problemMatcher": [
                 "$msCompile"
