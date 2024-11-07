@@ -23,7 +23,7 @@ I recommend to use extension C++/C Debugger to test the application fast. Don't 
           "/I\"{MSVC_PATH}/atlmfc/include\"",
           "/I\"{MSVC_PATH}/include\"",
           "/I\"{VS_PATH}/VC/Auxiliary/VS/include\"",
-          "/I\"${workspaceFolder}\\dependencies\\include\"",
+          "/I\"{YOUR INCLUDES...}"",
           "/EHsc",
           "/Fe:\"{PATH_TO_EXE_FILE}\"",
           "/std:c++17",
