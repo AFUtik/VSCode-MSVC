@@ -2,7 +2,7 @@ Hi, this repository is needed to build Projects   with MSVC compiler and its lib
 
 First off, you have to install Visual Studio to obtain MSVC compiler and Windows SDK. There're important libraries from Windows SDK and Visual Studio Tools. Without them some libraries can't work properly.
 
-You need to specify the paths instead of those variables that you see under this text and make it work. You can see my example how to specify these paths in ``.vscode/tasks.json``. After you've specified the paths you can add your libs with ``.lib`` to the end of args or include folder via ``"/I\"{include_folder}""``.
+You need to donwload my script [configure.py] and change variables in the script to yours. This script also can be able to find your dependencies(libs, includes just make sure the folders are specified properly (include/ or lib/). ) in your project and write their to 'tasks.json'. Or just donwload my .vscode files and change the variables there without python script.
 
 I recommend to use extension C++/C Debugger to test the application fast. Don't forget change the path to exe file in '.vscode/launch.json' afterwards.
 
