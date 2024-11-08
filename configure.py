@@ -37,11 +37,11 @@ launch = {'version': '0.2.0', 'configurations': [{'name': 'Build with MSVC and D
 for file in glob.glob(cur_dir + "/**/", recursive=True):
     if file.endswith("include\\"):
         res = input(f"Include directory has been found. The full path of directory: {file}. Should this directory be used? Write Y/N: ")
-        if res: #ADDS INCLUDE DIR TO TASKS
+        if res and res.lower() != 'n': #ADDS INCLUDE DIR TO TASKS
             tasks['tasks'][0]['args'].insert(0, f"/I\"{file[:-1]}\"")
     elif file.endswith("lib\\") or file.endswith("libs\\"):
         res = input(f"Library directory has been found. The full path of directory: {file}. Should this directory be used? Write Y/N: ")
-        if res: #ADDS LIBS TO TASKS
+        if res and res.lower() != 'n' : #ADDS LIBS TO TASKS
             libs = glob.glob(file + "*.lib")
             tasks['tasks'][0]['args'].extend(libs)
 
