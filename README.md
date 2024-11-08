@@ -4,6 +4,16 @@ First off, you have to install Visual Studio to obtain MSVC compiler and Windows
 
 You need to donwload my script [configure.py](https://github.com/AFUtik/VSCode-MSVC/tree/master/configure.py) and change variables to yours in the script. This script also can be able to find your dependencies(libs, includes just make sure the folders are specified properly (include/ or lib/). ) in your project and write their to 'tasks.json'. Or you can do it without python script just download my [.vscode](https://github.com/AFUtik/VSCode-MSVC/tree/master/.vscode/) files and change the variables there.
 
+```python
+vars = {
+    "VS_PATH": "E:/apps/VS2022/VC/Tools/MSVC/14.41.34120",
+    "SDK_INCLUDE_PATH": "E:/Windows Kits/10/Include/10.0.26100.0",
+    "SDK_LIB_PATH": "E:/Windows Kits/10/Lib/10.0.26100.0",
+    "MSVC_PATH": "E:/apps/VS2022/VC/Tools/MSVC/14.41.34120",
+    "CXX_VERSION": "std:c++17"
+}
+```
+
 I recommend to use extension C++/C Debugger to test the application fast. Don't forget change the path to exe file in '.vscode/launch.json' afterwards.
 
 ```json
